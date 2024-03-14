@@ -1,0 +1,15 @@
+{
+  "name": "mi-books-crud",
+  "version": "1.0.0",
+  "description": "ejercicio crud  express mongoose relaciones embed ",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fc",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
