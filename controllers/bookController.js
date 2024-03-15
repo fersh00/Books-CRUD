@@ -1,5 +1,5 @@
-import Book from "../models/Book";
-import Author from "../models/Author";
+import Book from "../models/Book.js";
+import Author from "../models/Author.js";
 
 const createBook = async (req, res) => {
 	try {
@@ -40,4 +40,10 @@ const createBook = async (req, res) => {
 	}
 }
 
-export { createBook }
+const getAllBooks = async (req, res) => {
+	const books = await Book.find();
+
+	res.json(books);
+};
+
+export { createBook, getAllBooks }
