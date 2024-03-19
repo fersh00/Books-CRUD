@@ -42,8 +42,12 @@ const createBook = async (req, res) => {
 
 const getAllBooks = async (req, res) => {
 	const books = await Book.find();
-
 	res.json(books);
 };
 
-export { createBook, getAllBooks }
+const getBookById = async (req, res) => {
+	const book = await Book.findById(req.params.bookId);
+	res.json(book);
+}
+
+export { createBook, getAllBooks, getBookById }
